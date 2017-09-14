@@ -18,7 +18,7 @@ namespace TextService.Controllers
             Array.Reverse(valueCharArray);
 
             var response = new HttpResponseMessage(HttpStatusCode.OK);
-            response.Content = new StringContent($"The reverse of {value} is {new string(valueCharArray)}");
+            response.Content = new StringContent($"The reverse of {value} is {new string(valueCharArray)} (v2.0)");
             response.Content.Headers.ContentType = new MediaTypeHeaderValue("text/plain");
 
             return response;
